@@ -3,6 +3,12 @@
 ## Arquitectura
 ![Diagrama](https://fingpey.s3.amazonaws.com/fingpey-aws.png "Arquitectura AWS")
 
+## Demo Urls 
+- Homepage http://ec2-3-83-93-207.compute-1.amazonaws.com/
+- Backend http://ec2-3-83-93-207.compute-1.amazonaws.com/admin/
+- API http://ec2-3-83-93-207.compute-1.amazonaws.com/api/
+- App preview https://marvelapp.com/54ag5f7/screen/66815332
+
 ## Stack
 - php
 - python
@@ -10,12 +16,6 @@
 - java
 - aws
 - Visa CiberSource
-
-## Urls 
-- Homepage http://ec2-3-83-93-207.compute-1.amazonaws.com/
-- Backend http://ec2-3-83-93-207.compute-1.amazonaws.com/admin/
-- API http://ec2-3-83-93-207.compute-1.amazonaws.com/api/
-- App preview https://marvelapp.com/54ag5f7/screen/66815332
 
 
 ### Instalación  del backend 
