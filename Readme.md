@@ -20,13 +20,14 @@
 
 ### Instalación  del backend 
 
-* Requisitos
+#### Requisitos
 - php 7.2.x
 - mysql 5.7
 - composer
 
+#### Documentación Symfony https://symfony.com/doc/4.4/setup.html
 
-* Instalación
+#### Instalación
 - clonar el repositorio
 - instalar las dependencias `composer install`
 - crear el archivo de configuración .env
@@ -70,3 +71,5 @@ CORS_ALLOW_ORIGIN=^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$
 
 ```
 - ejecutar las migraciones `php bin/console doctrine:migrations:migrate`
+- ejecutar el servidor local `php bin/console server:start`
+- ir a http://localhost:8000
