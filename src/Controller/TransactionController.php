@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class TransactionController extends AbstractController
 {
     /**
-     * @Route("/transaction", name="transaction")
+     * @Route("/", name="transaction")
      */
     public function index()
     {
