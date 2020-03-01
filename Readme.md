@@ -15,7 +15,7 @@
 - Homepage http://ec2-3-83-93-207.compute-1.amazonaws.com/
 - Backend http://ec2-3-83-93-207.compute-1.amazonaws.com/admin/
 - API http://ec2-3-83-93-207.compute-1.amazonaws.com/api/
-- App preview *url preview*
+- App preview https://marvelapp.com/54ag5f7/screen/66815332
 
 
 ### Instalación  del backend 
