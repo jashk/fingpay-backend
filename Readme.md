@@ -1,5 +1,7 @@
 ![Fingpey](https://fingpey.s3.amazonaws.com/Fondo.png "FingPey")
 
+## [FingPeySBC-TechSummaryTemplate.pdf](FingPeySBC-TechSummaryTemplate.pdf)
+
 ## Arquitectura
 ![Diagrama](https://fingpey.s3.amazonaws.com/fingpey-aws.png "Arquitectura AWS")
 
