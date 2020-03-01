@@ -1,4 +1,4 @@
-# FingPey
+![Fingpey](https://fingpey.s3.amazonaws.com/Fondo.png "FingPey")
 
 ## Arquitectura
 ![Diagrama](https://fingpey.s3.amazonaws.com/fingpey-aws.png "Arquitectura AWS")
@@ -12,9 +12,10 @@
 - Visa CiberSource
 
 ## Urls 
-- homepage http://ec2-3-83-93-207.compute-1.amazonaws.com/
-- backend http://ec2-3-83-93-207.compute-1.amazonaws.com/admin/
-- api http://ec2-3-83-93-207.compute-1.amazonaws.com/api/
+- Homepage http://ec2-3-83-93-207.compute-1.amazonaws.com/
+- Backend http://ec2-3-83-93-207.compute-1.amazonaws.com/admin/
+- API http://ec2-3-83-93-207.compute-1.amazonaws.com/api/
+- App preview *url preview*
 
 
 ### Instalación  del backend 
