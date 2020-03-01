@@ -25,9 +25,9 @@ class VisaController extends AbstractController
             'unsigned_field_names' => '',
             'signed_date_time' => gmdate("Y-m-d\TH:i:s\Z"),
             'locale' => 'en',
-            'transaction_type' => 'sale,create_payment_token',
+            'transaction_type' => 'create_payment_token',
             'reference_number' => uniqid(),
-            'amount'=> 20,
+            'amount'=> '20.00',
             'currency' => 'MXN'
         ];
 
