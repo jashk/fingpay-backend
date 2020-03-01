@@ -1,6 +1,87 @@
 easy_admin:
+   site_name: 'FingPey Backend'
+   design:
+      brand_color: '#14BFC5'
+      menu:
+         - { entity: 'Merchant', label: 'Comercios', icon: 'store' }
+         - { entity: 'Customer', label: 'Clientes', icon: 'users' }
+         - { entity: 'Account', label: 'Cuentas', icon: 'credit-card-alt' }
+         - { entity: 'Transaction', label: 'Transaction', icon: 'receipt' }
+         - { entity: 'User', label: 'Usuarios', icon: 'user' }
+
    entities:
        # List the entity class name you want to manage
-       - App\Entity\User
-       - App\Entity\Merchant
-       - App\Entity\Customer
+      Merchant:
+         class: App\Entity\Merchant
+         label: 'Comercios'
+         form:
+            fields:
+               - {property: 'name', type: 'text', label: 'Nombre'}
+               - {property: 'business_name', type: 'text', label: 'Razón Social'}
+               - {property: 'tax_id', type: 'text', label: 'RFC'}
+               - {property: 'phone', type: 'tel', label: 'Teléfono'}
+               - {property: 'address', type: 'text', label: 'Dirección'}
+               - {property: 'status', type: 'text', label: 'Estatus'}
+         list:
+            fields:
+               - {property: 'name', type: 'text', label: 'Nombre'}
+               - {property: 'business_name', type: 'text', label: 'Razón Social'}
+               - {property: 'tax_id', type: 'text', label: 'RFC'}
+               - {property: 'status', type: 'text', label: 'Estatus'}
+      Customer:
+         class: App\Entity\Customer
+         label: 'Clientes'
+         form:
+            fields:
+               - {property: 'name', type: 'text', label: 'Nombre'}
+               - {property: 'offial_id', type: 'text', label: 'CURP'}
+               - {property: 'phone', type: 'tel', label: 'Teléfono'}
+         list:
+            fields:
+               - {property: 'name', type: 'text', label: 'Nombre'}
+               - {property: 'offial_id', type: 'text', label: 'CURP'}
+               - {property: 'phone', type: 'tel', label: 'Teléfono'}
+      Account:
+         class: App\Entity\Account
+         label: 'Cuentas'
+         form:
+            fields:
+               - {property: 'number', type: 'text', label: 'Cuenta/Tarjeta'}
+               - {property: 'type', type: 'text', label: 'Tipo'}
+               - {property: 'status', type: 'text', label: 'Estado'}
+         list:
+            fields:
+               - {property: 'number', type: 'text', label: 'Cuenta/Tarjeta'}
+               - {property: 'type', type: 'text', label: 'Tipo'}
+               - {property: 'status', type: 'text', label: 'Estado'}
+      Transaction:
+         class: App\Entity\Transaction
+         label: 'Transacciones'
+         form:
+            fields:
+               - {property: 'merchant_id', type: 'text', label: 'Comercio'}
+               - {property: 'customer_id', type: 'text', label: 'Cliente'}
+               - {property: 'account_id', type: 'text', label: 'Cuenta'}
+               - {property: 'amount', type: 'money', label: 'Monto',  type_options: { currency: 'MXN' }}
+               - {property: 'autorization', type: 'text', label: 'Autorización'}
+               - {property: 'reference', type: 'text', label: 'Referencia'}
+               #- {property: 'guid', type: 'text', label: 'Identificador'}
+               - {property: 'status', type: 'text', label: 'Estado'}
+         list:
+            fields:
+               - {property: 'merchant_id', type: 'text', label: 'Comercio'}
+               - {property: 'customer_id', type: 'text', label: 'Cliente'}
+               - {property: 'amount', type: 'money', label: 'Monto',  type_options: { currency: 'MXN' }}
+               - {property: 'status', type: 'text', label: 'Estado'}
+      User:
+         class: App\Entity\User
+         label: 'Usuarios'
+         form:
+            fields:
+               - {property: 'phone', type: 'tel', label: 'Teléfono'}
+               - {property: 'password', type: 'password', label: 'Contraseña'}
+         list:
+            fields:
+               - {property: 'phone', type: 'tel', label: 'Teléfono'}
+               - {property: 'password', type: 'password', label: 'Contraseña'}
+

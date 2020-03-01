@@ -46,6 +46,11 @@ class Merchant
      */
     private $deposit_account;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $status;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -119,6 +124,18 @@ class Merchant
     public function setDepositAccount(?string $deposit_account): self
     {
         $this->deposit_account = $deposit_account;
+
+        return $this;
+    }
+
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(string $status): self
+    {
+        $this->status = $status;
 
         return $this;
     }
