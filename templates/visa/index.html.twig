@@ -9,12 +9,22 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/html/fingpey-backend/src/Controller/VisaController.php'|file_link(0) }}">src/Controller/VisaController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/html/fingpey-backend/templates/visa/index.html.twig'|file_link(0) }}">templates/visa/index.html.twig</a></code></li>
-    </ul>
+    <h1>Presiones el botón  enviar para continuar</h1>
+    <form id="payment_confirmation" action="https://testsecureacceptance.cybersource.com/token/create" method="post"/>
+    <input type="hidden" name="access_key" value="{{ params['access_key'] }}">
+    <input type="hidden" name="profile_id" value="{{ params['profile_id'] }}">
+    <input type="hidden" name="transaction_uuid" value="{{ params['transaction_uuid'] }}">
+    <input type="hidden" name="signed_field_names" value="{{ params['signed_field_names'] }}">
+    <input type="hidden" name="unsigned_field_names">
+    <input type="hidden" name="signed_date_time" value="{{ params['signed_date_time'] }}">
+    <input type="hidden" name="locale" value="{{ params['locale'] }}">
+    <input type="hidden" name="transaction_type" value="{{ params['transaction_type'] }}" size="25">
+    <input type="hidden" name="reference_number" value="{{ params['reference_number'] }}">
+    <span>Realizaremos un cargo de 20.00 MXN para comprobar tu cuenta.</span>
+    <input type="hidden" name="amount" value="{{ params['amount'] }}">
+    <input type="hidden" name="currency" value="{{ params['currency'] }}">
+    <input type="hidden" name="signature" value="{{ signature }}">
+    <input type="submit" id="submit" name="submit" value="Submit"/>
+</form>
 </div>
 {% endblock %}
